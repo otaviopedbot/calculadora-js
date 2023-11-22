@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(67, 65, 65);
+}
+
+.visor {
+    font-size: 1.5em;
+    background-color: #c7bbbb;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+    text-align: right;
+}
+
+.teclado{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.teclado button{
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+    border: none;
+}
+
+.teclado button:hover {
+    background-color: #c7bbbb;
+}

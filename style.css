@@ -18,19 +18,19 @@ body {
     text-align: right;
 }
 
-.keyboard{
+#keyboard{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.keyboard button{
+#keyboard button{
     width: 50px;
     height: 50px;
     gap: 10px;
     border: none;
 }
 
-.keyboard button:hover {
+#keyboard button:hover {
     background-color: #c7bbbb;
 }

@@ -8,41 +8,40 @@
 </head>
 <body>
 
-<div class="visor" id="visor"></div>
+<span id="display"></span>
 
-<div class="teclado">
+<div class="keyboard">
     <div>
-        <button onclick="AdicionarAoVisor('7')">7</button>
-        <button onclick="AdicionarAoVisor('8')">8</button>
-        <button onclick="AdicionarAoVisor('9')">9</button>
-        <button onclick="AdicionarAoVisor('/')">/</button>
+        <button onclick="addToDisplay('7')">7</button>
+        <button onclick="addToDisplay('8')">8</button>
+        <button onclick="addToDisplay('9')">9</button>
+        <button onclick="addToDisplay('/')">/</button>
     </div>
 
     <div>
-        <button onclick="AdicionarAoVisor('4')">4</button>
-        <button onclick="AdicionarAoVisor('5')">5</button>
-        <button onclick="AdicionarAoVisor('6')">6</button>
-        <button onclick="AdicionarAoVisor('*')">x</button>
+        <button onclick="addToDisplay('4')">4</button>
+        <button onclick="addToDisplay('5')">5</button>
+        <button onclick="addToDisplay('6')">6</button>
+        <button onclick="addToDisplay('*')">x</button>
     </div>
 
     <div>
-        <button onclick="AdicionarAoVisor('1')">1</button>
-        <button onclick="AdicionarAoVisor('2')">2</button>
-        <button onclick="AdicionarAoVisor('3')">3</button>
-        <button onclick="AdicionarAoVisor('-')">-</button>
+        <button onclick="addToDisplay('1')">1</button>
+        <button onclick="addToDisplay('2')">2</button>
+        <button onclick="addToDisplay('3')">3</button>
+        <button onclick="addToDisplay('-')">-</button>
     </div>
 
     <div>
-        <button onclick="AdicionarAoVisor('0')">0</button>
-        <button onclick="AdicionarAoVisor('.')">.</button>
-        <button onclick="AdicionarAoVisor('+')">+</button>
-        <button onclick="Calcular()">=</button>
+        <button onclick="addToDisplay('0')">0</button>
+        <button onclick="addToDisplay('.')">.</button>
+        <button onclick="addToDisplay('+')">+</button>
+        <button onclick="calculate()">=</button>
     </div>
 
-
     <div>
-        <button onclick="Limpar()">C</button>
-        <button onclick="Apagar()"><--</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="deleteDigit()"><--</button>
     </div>
 
 </div>

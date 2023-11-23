@@ -1,36 +1,36 @@
-const visor = document.getElementById('visor');
-let digitos = '';
+const display = document.getElementById('display');
+let digits = '';
 
-function LimitarString(string) {
+function limitString(string) {
     if (string.length > 15) {
         return string.substring(string.length - 15);
     }
     return string;
 }
 
-function AdicionarAoVisor(valor) {
-    digitos += valor;
-    digitos = LimitarString(digitos);
-    visor.innerText = digitos;
+function addToDisplay(value) {
+    digits += value;
+    digits = limitString(digits);
+    display.innerText = digits;
 }
 
-function Calcular() {
+function calculate() {
     try {
-        novosDigitos = eval(digitos);
-        visor.innerText = novosDigitos;
-        digitos = novosDigitos;
+        const newDigits = eval(digits);
+        display.innerText = newDigits;
+        digits = newDigits;
     } catch (error) {
-        visor.innerText = 'Erro';
-        digitos = '';
+        display.innerText = 'Error';
+        digits = '';
     }
 }
 
-function Limpar() {
-    visor.innerText = '';
-    digitos = '';
+function clearDisplay() {
+    display.innerText = '';
+    digits = '';
 }
 
-function Apagar() {
-    digitos = digitos.slice(0, -1);
-    visor.innerText = digitos;
+function deleteDigit() {
+    digits = digits.slice(0, -1);
+    display.innerText = digits;
 }
